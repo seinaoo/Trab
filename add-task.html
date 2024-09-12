@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciamento de Tarefas - Adicionar Tarefa</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    section {
+      padding: 20px;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Adicionar Tarefa</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="features.html">Funcionalidades</a>
+        <a href="add-task.html">Adicionar Tarefa</a>
+        <a href="calendar.html">Calendário</a>
+        <a href="progress.html">Progresso</a>
+        <a href="contact.html">Contato</a>
+        <a href="dicas.html">dicas</a>
+        <a href="metodologia.html">Metodologia</a>
+        <a href="casossucesso.html">casos de sucesso</a>
+      </nav>
+  </header>
+
+  <section>
+    <h2>Adicione uma nova tarefa</h2>
+
+    <form action="submit-task.php" method="post">
+      <label for="task-name">Nome da Tarefa:</label>
+      <input type="text" id="task-name" name="task-name" required>
+
+      <label for="due-date">Data de Entrega:</label>
+      <input type="date" id="due-date" name="due-date" required>
+
+      <label for="priority">Prioridade:</label>
+      <select id="priority" name="priority">
+        <option value="alta">Alta</option>
+        <option value="media">Média</option>
+        <option value="baixa">Baixa</option>
+      </select>
+
+      <label for="description">Descrição:</label>
+      <textarea id="description" name="description" rows="4" placeholder="Descreva a tarefa..."></textarea>
+
+      <input type="submit" value="Adicionar Tarefa">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Gerenciamento de Tarefas</p>
+  </footer>
+
+</body>
+</html>

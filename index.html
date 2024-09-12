@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciamento de Tarefas - Home</title>
+
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- CSS Interno -->
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #3498db;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      padding: 15px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #2980b9;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .task-box {
+      background-color: white;
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 5px;
+      transition: box-shadow 0.3s;
+    }
+
+    .task-box:hover {
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #3498db;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    /* Animação */
+    .button-animate {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .button-animate:hover {
+      transform: scale(1.1);
+    }
+
+    /* Pseudo-elementos */
+    h1::first-letter {
+      font-size: 2em;
+      color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Gerenciamento de Tarefas e Prazos</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="features.html">Funcionalidades</a>
+        <a href="add-task.html">Adicionar Tarefa</a>
+        <a href="calendar.html">Calendário</a>
+        <a href="progress.html">Progresso</a>
+        <a href="contact.html">Contato</a>
+        <a href="dicas.html">dicas</a>
+        <a href="metodologia.html">Metodologia</a>
+      </nav>
+  </header>
+
+  <section>
+    <h2>Bem-vindo ao sistema de gerenciamento de tarefas</h2>
+    <p>Este site foi desenvolvido para ajudar estudantes a organizarem suas tarefas e prazos de forma eficiente e simples.</p>
+    
+    <div class="grid-container">
+      <div class="task-box">
+        <h3>Organize suas Tarefas</h3>
+        <p>Adicione suas tarefas diárias e acompanhe seus prazos para manter-se organizado.</p>
+      </div>
+      <div class="task-box">
+        <h3>Visualize o Progresso</h3>
+        <p>Acompanhe seu progresso e veja quais tarefas já foram concluídas.</p>
+      </div>
+    </div>
+
+    <!-- CSS Inline -->
+    <button style="background-color: #3498db; color: white; padding: 10px 20px;">Adicionar Nova Tarefa</button>
+
+    <br><br>
+    
+    <!-- Botão com animação -->
+    <a href="add-task.html" class="button-animate">Adicionar Tarefa</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Gerenciamento de Tarefas</p>
+  </footer>
+
+</body>
+</html>
